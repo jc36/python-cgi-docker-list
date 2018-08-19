@@ -17,7 +17,6 @@ print("""<!DOCTYPE HTML>
         </head>
         <body>""")
 
-
 client = docker.from_env()
 if cid == "":
   print("<h1>Containers:</h1>")
