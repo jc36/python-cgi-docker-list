@@ -8,17 +8,9 @@ git push -u origin master'''
       }
     }
     stage('wait') {
-      parallel {
-        stage('wait') {
-          steps {
-            sleep(unit: 'MINUTES', time: 5)
-          }
-        }
-        stage('') {
-          steps {
-            echo 'wait until building'
-          }
-        }
+      steps {
+        sleep(unit: 'MINUTES', time: 5)
+        echo 'wait 5 minutes until building'
       }
     }
     stage('run docker') {
