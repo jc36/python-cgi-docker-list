@@ -4,10 +4,10 @@ pipeline {
     stage('push to git') {
       steps {
         sh '''cd project/python-cgi-docker-list
-touch touchfile
-git add *
+#touch touchfile
+#git add *
 git commit -am "newCommit"
-git remote set-url origin git@github.com:jc36/python-cgi-docker-list
+#git remote set-url origin git@github.com:jc36/python-cgi-docker-list
 git push -u origin master'''
       }
     }
