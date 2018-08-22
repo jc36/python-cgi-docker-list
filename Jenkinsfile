@@ -6,6 +6,7 @@ pipeline {
         sh '''cd /tmp
 git clone https://github.com/jc36/python-cgi-docker-list
 touch touchfile
+git add *
 git commit -am "newCommit"
 git push -u origin master'''
       }
