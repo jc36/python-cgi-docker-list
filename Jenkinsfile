@@ -3,10 +3,7 @@ pipeline {
   stages {
     stage('push to git') {
       steps {
-        sh '''rm -rf project
-mkdir project
-cd project
-git clone https://github.com/jc36/python-cgi-docker-list
+        sh '''cd project/python-cgi-docker-list
 touch touchfile
 git add *
 git commit -am "newCommit"
